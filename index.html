@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Shop Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="landing.css">
+    <script src='landing.js' defer></script>
+</head>
+<body>
+    <!--------------------SCROLL TOP--------------------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
+    <!---================HEADER SECTION================-->
+    <header>
+        <nav class=nav__container id = nav-container>
+            <div class="banner">
+                <div class="toggle" id="toggle"><i class='bx bx-menu'></i></div>
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" class="logo-img">
+                        <p>ShopWith<span>JoJo</span></p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <div class='search'>
+                    <input type="text" class="search__product" placeholder="Search for a product">
+                    <button type='submit' id= 'submit-btn' class="submit__btn">SEARCH</button>
+                </div>
+                <div class="sign__in" id="sign-in"><i class='bx bxs-user-circle'></i>Sign In</div>
+                <div class="favorites" id="favorites"><i class='bx bx-heart'></i>Favorites</div>
+            </div>
+            <a href="cart.html">
+                <div class="cart" id="cart">
+                    <i class='bx bx-cart-alt'></i>
+                    <div class="cart__count" id="cart-count">
+                        <div class="count" id="count">0</div>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <!---======================PRODUCT SECTION============================-->
+    <main>
+        <div class="animation">
+            <div class="header-details">
+                <div class="h-title">Category</div>
+                <div class="h-description">
+                    <a href="#phone"><p class="h-details"><i class="fas fa-tablet-alt"></i> Phones & Tablet</p></a>
+                    <a href="#electronics" class=""><p class="h-details"><i class="fas fa-tv"></i> Electronic</p></a>
+                    <a href="#home-appliances" class=""><p class="h-details"><i class="fas fa-laptop-house"></i> Home & Office</p></a>
+                    <a href="#fashion-wear" class=""><p class="h-details"><i class="fas fa-vest"></i> Fashion</p></a>
+                    <p class="h-details"><i class="fas fa-apple-alt"></i> Supermarket</p>
+                    <p class="h-details"><i class="fas fa-stethoscope"></i> Health & Beauty</p>
+                    <p class="h-details"><i class="fas fa-laptop"></i> Computing</p>
+                    <p class="h-details"><i class="fas fa-baby-carriage"></i> Baby Products</p>
+                    <p class="h-details"><i class="fas fa-gamepad"></i> Gaming</p>
+                    <p class="h-details"><i class="fas fa-dumbbell"></i> Sporting Goods</p>
+                    <p class="h-details"><i class="fas fa-car"></i> Automobile</p>
+                    <p class="h-details"><i class="fas fa-ellipsis-h"></i>Other Categories</p>
+                </div>    
+            </div>
+            <div class="header-container">
+                <div class="slides">
+                    <!-----------radio button start------------->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <!---------------Radio button end-------------->
+        
+                    <!--------------Images Start---------------->
+                    <div class="image first">
+                        <img src="images/shop images/background1.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/shop images/background2.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/shop images/background3.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/shop images/background4.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/shop images/background5.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/shop images/background6.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/shop images/background7.jpg" alt="">
+                    </div>
+                    <!------------Images End------------------->
+                    <!------------Automatic Navigation Starts--------------->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                    </div>
+                    <!----------------Automatic Navigation Ends-------------->
+                </div>
+                <!----------------Manual Navigation------------------->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container show" id='container'>
+            <!--Phones-->
+            <div class="item" id="item">
+                <div class="heading" id="heading">
+                    <h2 class="title" id="phone">PHONES</h2>
+                </div>
+                
+                <div class="phones" id="phones">
+                    
+                </div>
+            </div>
+
+            <!--Televisions-->
+            <div class="item" id="item">
+                <div class="heading" id="heading">
+                    <h2 class="title" id="electronics">TELEVISIONS</h2>
+                </div>
+                
+                <div class="phones" id="tv">
+                    
+                </div>
+            </div>
+            
+            <!--Home Appliances-->
+            <div class="item" id="item">
+                <div class="heading" id="heading">
+                    <h2 class="title" id="home-appliances">HOME APPLIANCES</h2>
+                </div>
+                
+                <div class="phones" id="appliances">
+                    
+                </div>
+            </div>
+
+            <!--Fashion-->
+            <div class="item" id="item">
+                <div class="heading" id="heading">
+                    <h2 class="title" id="fashion-wear">FASHION</h2>
+                </div>
+                
+                <div class="phones" id="fashion">
+                    
+                </div>
+            </div>
+        </div>
+        <div class='show__item' id='show-item'>
+        </div>
+        <div class="info">
+            <div class="information">
+                <h3>ShopWithJoJo: No. 1 Online Shopping Destination in Nigera </h3>
+                <p> ShopWithJoJo is your number <strong>one online shopping site</strong> in Nigeria. We are an online store where you can 
+                    purchase all your electronics, as well as books, home appliances, kiddies items, fashion items for men, women, 
+                    and children; cool gadgets, computers, groceries, automobile parts, and more on the go. What more? 
+                    You can have them delivered directly to you. Shop online with great ease as you pay with <u><strong>JoJoPay</strong></u> which guarantees 
+                    you the safest online shopping payment method, allowing you to make stress free payments. Whatever it is you wish 
+                    to buy, ShopWithJoJo offers you all and lots more at prices which you can trust. ShopWithJoJo has payment options 
+                    for everyone irrespective of taste, class, and preferences. Here, you also have the option to make your payment on 
+                    delivery for extra convenience. Shopping online in Nigeria is easy and convenient with ShopWithJoJo. We provide you 
+                    with a wide range of products you can trust. Take part in the deals of the day and discover the best prices on a wide 
+                    range of products.
+                </p>
+                <p>
+                    Protect yourself from getting sick by avoiding unprotected and unsolicited contact with sick people. Shop <b>surgical masks, 
+                    thermometers, hand sanitizers, wipes, purifiers, hand wash, disinfectants</b>, and surgical hand gloves and other household 
+                    essentialsat competitive prices on ShopWithJoJo Nigeria. Get discounts on a large collection of different items when you pick one 
+                    today and do not forget to shop groceries online from our top grocery items here on ShopWithJoJo Nigeria either. Shop for safety
+                     items here on ShopWithJoJo Nigeria
+                </p>
+                <p>
+                    ShopWithJoJo Mall  is here! You can now shop several genuine & 100% Authentic products from Top Brands: <b>Samsung, Apple, Microsoft , 
+                    Michelin Tyres, Scanfrost HP , P&G Intel, Xiaomiand</b> more shipped to you directly from official distributors with full warranty 
+                    and returns available up to 15 days.
+                </p>
+                <h3>Buy Mobile Phones, Fashion, Electronics, Appliances & more on ShopWithJoJo</h3>
+                <p>
+                    Be in the loop this year with new products and offers from ShopWithJoJo. Brand your home with various electronics and home and office 
+                    appliances from <b>Binatone, Panasonic, Samsung, Toshiba, Sony</b>, and <b>LG</b>. Get top phone brands all the latest gadgets and devices for 
+                    school projects from brands like <b>HP, IMose, Lenovo, Samsung,</b> and <b>Apple</b> with no hassles as you enjoy fast delivery service even 
+                    to your institution. ShopWithJoJo Nigeria also offers the latest innovative mobile phones such as Tecno Spark 4, Samsung A51 , 
+                    Samsung S20, Samsung S20 Plus, Samsung S20 Ultra Gionee M11, Tecno Camon 12, Tecno Camon 12 Pro, Samsung A30, Infinix Hot 8, 
+                    Nokia 7.2, Xiaomi Note 10 Pro, iPhone 11, iPhone 11 Pro Max, Huawei Y9s, Samsung S9, as well as the latest Samsung S10 series , 
+                    Samsung Note 10 & 10+, Samsung Note 10 Lite, Samsung A71, Samsung S20 Phones, Samsung S20, Tecno Camon 15, Samsung S20 Plus, 
+                    Samsung S20 Ultra  and more. Also take advantage of computing products available to own laptops like the Dell Inspiron, printers 
+                    and other storage devices such as hard drives at affordable prices. Get Professional Services online like insurance services, 
+                    medical services, IT Training, educational services and so much more.
+                </p>
+                <p>
+                    ShopWithJoJo Nigeria offers deals and discounts and never ceases to form campaigns all year around, all for the satisfaction and joy 
+                    of our customers. Our newsletter subscribers and Facebook fans get to know all of our offers before anyone else such as 
+                    Mobile & Tech Week, Ramadan, Jumia Anniversary, and Black Friday.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!--------------------FOOTER SECTION------------------------------>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" class="logo-img">
+                    <p>ShopWith<span>JoJo</span></p>
+                </div>
+                <div class="new">
+                    <div class="new-title">
+                        <h4>New to ShopWithJoJo?</h4>
+                        <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                    </div>
+                    <div class="n-form">
+                        <input class="input-field" type="email" placeholder="Enter Your Email Address">
+                        <button class="sub-btn">Subscribe</button>
+                    </div>
+                </div>
+                <div class="app">
+                    <div class="pointer">
+                        <div class="pointer-icon"><i class="fas fa-cart-arrow-down"></i></div>
+                        <div class="pointer-info">
+                            <h4>Download ShopWithJoJo Free App</h4>
+                            <p>Get access to exclusive offers!</p>
+                        </div>
+                    </div>
+                    <div class="app-download">
+                        <img src="images/iphone.png" alt="iphone app download">
+                        <img src="images/android-download.png" alt="goggle app download">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-infos">
+                    <h3>Company Information</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Top Searches</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Intellectual Property Policy</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Report Security Issue</a>
+                    <a href="#">Sell on ShopWithJoJo</a>
+                    <a href="#">Cookies Policy</a>
+                    <a href="#">Top Brands</a>
+                    <a href="#">ShopWithJoJo Official Blog</a>
+                </div>
+                <div class="footer-infos">
+                    <h3>Customer Service</h3>
+                    <a href="#">Shipping Information</a>
+                    <a href="#">My Favorites</a>
+                    <a href="#">FAQ for Newsletter Subscription</a>
+                    <a href="#">My Points</a>
+                    <a href="#">Warranty and Return</a>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">Deposit Expansion</a>
+                    <a href="#">FAQ & Support</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Gearbest Wallet Instruction</a>
+                    <a href="#">FAQs about COVID-19</a>
+                </div>
+                <div class="footer-infos">
+                    <h3>Make Money with Us</h3>
+                    <a href="#">Sell on ShopWithJoJo</a>
+                    <a href="#">Become a Sales Consultant</a>
+                    <a href="#">Become a ShopWithJoJo Vendor Service Provider</a>
+                    <a href="#">Become a Logistics Service Partner</a>
+                    <a href="#">Wholesale Socks</a>
+                </div>
+                <div class="footer-infos">
+                    <h3>International</h3>
+                    <a href="#">Algeria</a>
+                    <a href="#">Egypt</a>
+                    <a href="#">Ghana</a>
+                    <a href="#">Ivory Coast</a>
+                    <a href="#">Kenya</a>
+                    <a href="#">Morocco</a>
+                    <a href="#">South Africa</a>
+                </div>
+            </div>
+            <div class="footer-cash">
+                <div class="footer-address">
+                    <h4>JOIN US ON</h4>
+                    <div class="social-media">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>   
+                </div>
+
+                <div class="footer-payments">
+                    <h4>PAYMENT METHODS & DELIVERY PARTNERS</h4>
+                    <div class="payment-method">
+                        <img src="images/payments/bitcoin-sticker-label-design-vector_1017-13709.jpg" alt="">
+                        <img src="images/payments/Cash_App___Dollar___Full.jpg" alt="">
+                        <img src="images/payments/interswitch.jpg" alt="">
+                        <img src="images/payments/pago.png" alt="">
+                        <img src="images/payments/paypal-logo.png" alt="">
+                        <img src="images/payments/postepay.png" alt="">
+                        <img src="images/payments/quickteller.png" alt="">
+                        <img src="images/payments/rese.png" alt="">
+                        <img src="images/payments/sofort.png" alt="">
+                        <img src="images/payments/webmoney.png" alt="">
+                    </div>   
+                </div>
+            </div>
+            <p class="footer__copy">&#169; 2020 ShopWithJoJo. All right reserved</p>
+        </div>
+    </footer>
+
+    <!---============== SCROLL REVEAL =================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

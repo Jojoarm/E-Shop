@@ -1,0 +1,1038 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------Scroll Top---------------*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none; 
+    background-color: red; 
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all .9s ease;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+/*----------------Main-----------*/
+header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: #ff7417;;
+    z-index: 999;
+}
+a{
+    text-decoration: none;
+}
+.nav__container{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 30px;
+    font-family: "Dosis", sans-serif;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 220px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.logo span{
+    color: #ff7417;
+}
+.logo-img{
+    width: 60px;
+    height: 60px;
+}
+.nav__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+}
+.search{
+    display: flex;
+}
+.search__product{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;  
+}
+.submit__btn{
+    height: 30px;
+    width: 80px;
+    align-self: center;
+    background-color: #ff7417;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign__in,
+.favorites{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+.cart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;  
+}
+.bx{
+    font-size: 25px;
+    padding-right: 5px;
+    color: white;
+}
+.cart__count{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cart__count p{
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.count{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.sign__in:hover, 
+.cart:hover,
+.favorites:hover,
+.cart__count p:hover{
+    color:  #ff7417;
+}
+.logo:hover,
+.submit__btn:hover{
+    transform:  scale(1.075);
+}
+.toggle{
+    display: none;
+    cursor: pointer;
+}
+/*--------------Main-----------------*/
+.animation{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    padding-top: 50px;
+}
+.header-details{
+    height: 500px;
+    width: 250px;
+}
+.h-title{
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+.h-description{
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: black;
+    background-color: rgb(233, 235, 226, .4);
+    line-height: 2;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.h-description a{
+    color: black;
+}
+.header-details p{
+    cursor: pointer;
+}
+.header-details p:hover{
+    color:rgb(119, 135, 187)
+}
+.header-container{
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-self: center;
+}
+.slides{
+    width: 700%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.image{
+    width: 20%;
+    transition: 2s;
+}
+.image img{
+    width: 900px;
+    height: 500px;
+}
+
+/*CSS for manual slide navigation*/
+.navigation-manual{
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #f6f8f8;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #f6f8f8;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -17%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+/*CSS for Automatic Navigation*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2px solid #f6f8f8;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #f6f8f8;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #f6f8f8;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #f6f8f8;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #f6f8f8;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #f6f8f8;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #f6f8f8;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #f6f8f8;
+}
+
+.container,
+.products-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    column-gap: 55px;
+}
+.heading{
+    background-color: rgb(119, 135, 187);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    color: white;
+}
+.heading .title{
+    padding: 0 20px;
+    font-size: 25px;
+    font-family: "Dosis", sans-serif;
+}
+.heading span{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.phones{
+    display: flex;
+    row-gap: 10px;
+    overflow-x: scroll;
+    margin-bottom: 60px;
+}
+.img{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+}
+.img:hover{
+    border-bottom: 1px solid black;
+    border-left:  1px solid black;
+    border-radius: 10px;
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+}
+.img img{
+    width: 180px;
+    height: 230px;
+}
+
+.btn{
+    display: flex;
+    padding: 5px;
+    color: #f7f7f6;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+.info-btns{
+    display: flex;
+}
+.discover-btn{
+    background-color: #a4a4a4;
+}
+.cart-btn{
+    background-color: #141110;
+    cursor: pointer;
+}
+.discover-btn:hover,
+.cart-btn:hover{
+    box-shadow: 3px 1rem 2rem rgba(0,0,0,.3);
+    transform: translateY(-.7rem)
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(119, 135, 187);
+    min-height: 100vh
+}
+.information{
+    max-width: 1000px;
+    height: 650px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: black;
+    word-wrap: break-word;
+    font-family: "Dosis", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 2;
+}
+
+
+/*-------------------------- CART PAGE ------------------------*/
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.products-container img{
+    width: 80px;
+    height: 100px;
+}
+.products-container .bx{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.products-container .bxs-trash{
+    color: red;
+}
+.product-header{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+.product-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 30px;
+}
+.basketTotalTitle{
+    width: 30%;
+}
+.basketTotal{
+    width: 10%;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 1
+}
+
+/*-----------------Footer Section----------------*/
+.footer-container{
+    background: #130f0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: "Dosis", sans-serif;
+    line-height: 2;
+}
+.footer-content{
+    background: rgb(12, 12, 12);
+    display: flex;
+    height: 120px;
+    padding: 10px 40px;
+    color: white;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.new,
+.app{
+    display: flex;
+    flex-direction: column;
+}
+.n-form{
+    display: flex;
+    flex-direction: row;
+}
+.input-box{
+    display: flex;
+}
+.input-field{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+.sub-btn{
+    width: 70px;
+    height: 40px;
+    background: #141110;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.pointer, 
+.app-download{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.app-download img{
+    width: 100px;
+    height: 40px;
+}
+.pointer-icon{
+    color: orange;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.pointer-info{
+    height: 50px;
+    padding-left: 5px;
+}
+.footer-contact{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-infos{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer-infos a{
+    color: white;
+    font-family: "Dosis", sans-serif;;
+    font-size: 12px;
+}
+.footer-infos a:hover{
+    text-decoration: underline;
+}
+.footer-cash{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.footer-payments,
+.footer-address{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+}
+.payment-method{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-payments img{
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.social-media{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media a{
+    color: white;
+    font-size: 20px;
+}
+.footer-payments img:hover,
+.social-media a:hover{
+    transform: translateY(.7rem);
+    transition: 0.5s ease-in;
+}
+.footer__copy{
+    color: white;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 1170px){
+    .header-container,
+    .image img{
+        width: 600px;
+        height: 400px;
+    }
+    .slides{
+        height: 400px;
+    }
+    .navigation-manual{
+        width: 600px;
+    }
+    .navigation-auto{
+        width: 600px;
+        margin-top: 160px;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 10px;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 10px;
+    }
+
+    header{
+        width: 100vw;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .logo-img{
+        width: 40px;
+        height: 40px;
+    }
+    .search__product{
+        width: 180px;
+    }
+    .submit__btn{
+        height: 30px;
+        font-size: 12px;
+    }
+    .information{
+        max-width: 750px;
+        height: 500px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    /*Footer*/
+    .footer-content{
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    .footer-content .logo{
+        width: 160px;
+        height: 40px;
+    }
+    .footer-content .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .footer-content .new .n-form .input-field{
+        width: 150px;
+        height: 30px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .footer-content .new .n-form .sub-btn{
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .app-download img{
+        width: 80px;
+        height: 30px;
+    }
+    .pointer-icon{
+        height: 20px;
+        font-size: 20px;
+    }
+    .pointer-info{
+        height: 40px;
+    }
+    .footer-cash{
+        justify-content: center;
+    }
+    .footer-payments,
+    .footer-address{
+        font-size: 10px;
+    }
+    .payment-method{
+        max-width: 700px;
+    }
+    .footer-payments img{
+        width: 40px;
+        height: 20px;
+    }
+    .social-media{
+        width: 100px;
+    }
+    .social-media a{
+        font-size: 16px;
+    }
+    .footer-address{
+        padding-left: 10px;
+    }
+    .footer-payments{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .animation{
+        height: 300px;
+        width: auto;
+        padding-top: 80px;
+        justify-content: center;
+    }
+    .header-container,
+    .image img{
+        width: 300px;
+        height: 200px;
+    }
+    .slides{
+        height: 200px;
+    }
+    .navigation-manual{
+        width: 300px;
+    }
+    .navigation-auto{
+        width: 300px;
+        margin-top: 160px;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 10px;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 10px;
+    }
+
+    .nav__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .h-title{
+        width: 200px;
+    }
+    .header-details{
+        top: -1000px;
+        /* width: 100%; */
+        width: 200px;
+        height: 1000px;
+        position: absolute;
+        transition: all .5s ease;
+        justify-content: space-evenly;
+        left: 0px;
+        z-index: 1;
+    }
+    .h-description{
+        background-color: rgb(233, 235, 226);
+        height: 800px;
+        line-height: 1;
+    }
+    .nav__menu{
+        display: none;
+    }
+    .logo{
+        /* margin-left: 20px; */
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .logo-img{
+        width: 40px;
+        height: 40px;
+    }
+    .cart{
+        margin-right: 20px;
+        position: absolute;
+        right: 1rem;
+        top: 1.2rem;  
+    }
+    .toggle{
+        display: flex;
+        color: white;
+    }
+    .search__product{
+        width: 200px;
+        height: 35px;
+    }
+    .submit__btn{
+        height: 25px;
+    }
+    .show-menu{
+        top: 70px;
+    }
+    .products-container img{
+        width: 50px;
+        height: 80px;
+    }
+    .products-container .bx{
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .products-container{
+        margin-right:30px;
+    }
+    .basketTotalTitle{
+        width: 40%;
+    }
+    .information{
+        max-width: 400px;
+        height: 670px;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+     /*Footer*/
+     .footer-content{
+        padding: 10px 5px;
+        font-size: 9px;
+    }
+    .footer-content .logo{
+        width: 120px;
+        height: 30px;
+    }
+    .footer-content .logo img{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-content .new .n-form .input-field{
+        width: 120px;
+        height: 25px;
+        padding: 3px;
+        font-size: 9px;
+    }
+    .footer-content .new .n-form .sub-btn{
+        width: 50px;
+        height: 25px;
+        font-size: 9px;
+    }
+    .footer-contact{
+        font-size: 8px;
+    }
+    .app-download img{
+        width: 60px;
+        height: 25px;
+    }
+    .pointer-icon{
+        height: 15px;
+        font-size: 15px;
+    }
+    .pointer-info{
+        height: 30px;
+    }
+    .footer-cash{
+        justify-content: center;
+    }
+    .footer-payments,
+    .footer-address{
+        font-size: 9px;
+    }
+    .payment-method{
+        width: 500px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 20px;
+    }
+    .footer-payments img{
+        width: 40px;
+        height: 20px;
+    }
+    .social-media{
+        width: 70px;
+    }
+    .social-media a{
+        font-size: 12px;
+    }
+    .footer-address{
+        padding-left: 5px;
+    }
+    .footer-payments{
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 580px){
+     /*Footer*/
+     .footer-content{
+        padding: 10px 5px;
+        font-size: 7px;
+        justify-content: space-around;
+    }
+    .footer-content .logo{
+        width: 80px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .footer-content .logo img{
+        width: 25px;
+        height: 25px;
+    }
+    .footer-content .new .n-form .input-field{
+        width: 90px;
+        height: 25px;
+        padding: 3px;
+        font-size: 7px;
+    }
+    .footer-content .new .n-form .sub-btn{
+        width: 40px;
+        height: 25px;
+        font-size: 7px;
+    }
+    .footer-contact{
+        font-size: 7px;
+        line-height: 1.5;
+        padding: 0 6px;
+    }
+    .app-download img{
+        width: 40px;
+        height: 25px;
+    }
+    .pointer-icon{
+        height: 10px;
+        font-size: 10px;
+    }
+    .pointer-info{
+        height: 30px;
+    }
+    .footer-cash{
+        justify-content: center;
+    }
+    .footer-payments,
+    .footer-address{
+        font-size: 9px;
+    }
+    .payment-method{
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 20px;
+    }
+    .footer-payments img{
+        width: 40px;
+        height: 20px;
+    }
+    .social-media{
+        width: 70px;
+    }
+    .social-media a{
+        font-size: 12px;
+    }
+    .footer-address{
+        padding-left: 5px;
+    }
+    .footer-payments{
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 380px){
+    .information{
+        max-width: 400px;
+        height: 770px;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    .footer-content{
+        padding: 10px 5px;
+        font-size: 6px;
+        justify-content: space-around;
+    }
+    .footer-content .logo{
+        width: 70px;
+        height: 30px;
+        font-size: 6px;
+    }
+    .footer-content .logo img{
+        width: 20px;
+        height: 20px;
+    }
+    .footer-content .new .n-form .input-field{
+        width: 70px;
+        height: 20px;
+        padding: 3px;
+        font-size: 6px;
+    }
+    .footer-content .new .n-form .sub-btn{
+        width: 35px;
+        height: 20px;
+        font-size: 6px;
+    }
+    .payment-method{
+        width: 200px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 3px;
+        grid-row-gap: 10px;
+    }
+    .footer-payments img{
+        width: 25px;
+        height: 12px;
+    }
+}

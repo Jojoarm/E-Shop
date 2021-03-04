@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Shop Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="landing.css">
+    <script src='landing.js' defer></script>
+</head>
+<body>
+    <!---================HEADER SECTION================-->
+    <header>
+        <nav class=nav__container id = nav-container>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" class="logo-img">
+                    <p>ShopWith<span>JoJo</span></p>
+                </div>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <div class='search'>
+                    <input type="text" class="search__product" placeholder="Search for a product">
+                    <button type='submit' id= 'submit-btn' class="submit__btn">SEARCH</button>
+                </div>
+                <div class="sign__in" id="sign-in"><i class='bx bxs-user-circle'></i>Sign In</div>
+                <div class="favorites" id="favorites"><i class='bx bx-heart'></i>Favorites</div>
+            </div>
+            <a href="cart.html">
+                <div class="cart" id="cart">
+                    <i class='bx bx-cart-alt'></i>
+                    <div class="cart__count" id="cart-count">
+                        <div class="count" id="count">0</div>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="toggle" id="toggle"><i class='bx bx-menu'></i></div>
+        </nav>
+    </header>
+    <!---======================PRODUCT SECTION============================-->
+    <main>
+        <div class="products-container">
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="price">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="products">
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
