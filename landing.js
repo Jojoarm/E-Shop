@@ -389,13 +389,13 @@ displayCart()
 
 
 /*========================= SCROLL REVEAL ANIMATION =================== */
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-sr.reveal(`.phones, .img, .information, .footer-infos`,{
-    interval: 200
-})
+// sr.reveal(`.phones, .img, .information, .footer-infos`,{
+//     interval: 200
+// })
